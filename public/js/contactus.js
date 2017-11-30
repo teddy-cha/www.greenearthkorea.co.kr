@@ -28,7 +28,7 @@ function formSubmit(){
 }
 
 function sendEmail(){
-  var url = "http://localhost/mail/send";
+  var url = "http://api.greenearthkorea.co.kr:9000/mail";
   var formData = $('form').serializeArray();
   var template = "<html><head></head><body>" +
         "<div> GreenEarth 문의 내용 </div>" +
@@ -41,7 +41,7 @@ function sendEmail(){
         "</body></html>";
 
   var settings = {
-    "url": "http://localhost/mail/send",
+    "url": "http://api.greenearthkorea.co.kr:9000/mail",
     "method": "POST",
     "headers": {
       "content-type": "application/json"
