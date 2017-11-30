@@ -41,7 +41,7 @@ function sendEmail(){
         "</body></html>";
 
   var settings = {
-    "url": "http://api.greenearthkorea.co.kr:9000/mail",
+    "url": "http://localhost/mail/send",
     "method": "POST",
     "headers": {
       "content-type": "application/json"
