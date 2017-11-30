@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>greenearthkorea</title>
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="image/favicon.ico" />
+  <script src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" id="modal-m">
+  <div class="nav-container">
+    <nav>
+      <div class="nav-bar">
+        <div class="nav-module logo-module left">
+          <a href="index_m.html" style="width:117px;"><img alt="logo" class="logo" src="image/top-logo.png"></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="main-container">
+    <section class="features features-9">
+      <div class="container features__avatar">
+        <!-- <a id="move-back" href="index_m.html">
+          <img src="image/icon-back.png"/>
+          뒤로 가기
+        </a> -->
+        <h3 class="title">
+          <span class="title_main">문의하기</span>
+        </h3>
+        <form>
+          <label>작성자명*
+            <input type="text" class="form-control" id="contact-name" name="name">
+          </label>
+          <label>핸드폰번호*
+            <input type="tel" class="form-control" id="contact-phone" name="phone">
+          </label>
+          <label>이메일주소*
+            <input type="email" class="form-control" id="contact-email" name="email">
+          </label>
+          <label>제목*
+            <input type="text" class="form-control" id="contact-title" name="title">
+          </label>
+          <label>내용*
+            <textarea class="form-control" id="contact-context" name="content"></textarea>
+          </label>
+          <div>
+            <a class="btn btn_primary float-left" onclick="formSubmit(); return false;">
+              <span>확인</span>
+            </a>
+            <a class="btn float-right" href="index_m.html">
+              <span>취소하기</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- <div id="footer"></div> -->
+    <footer class="footer-3">
+      <div class="container">
+        <img alt="logo" src="image/footer-logo.png">
+        <div class="companyinfo">
+          <p>
+              상호명: 그린어스코리아 유한회사<br />
+              대표이사: 박종성<br />
+              소재지: (우편번호 06302) 서울특별시 강남구 논현로 134 연산MS 503호<br />
+              사업자등록번호: 870-88-00334<br />
+              대표전화: 1661-0844 / 팩스: 02-577-0845<br />
+              고객지원: <a href='mailto:support@greenearthkorea.co.kr'>support@greenearthkorea.co.kr</a><br />
+              <span class="type--fine-print">
+                ©
+                <span class="update-year">2017</span>
+                GreenEarth korea. All Right Reserved.
+              </span>
+          </p>
+        </div>
+        <div>
+          <a class="btn btn_primary float-left" href="modal_m.html">
+            <span>문의하기</span>
+          </a>
+          <a class="btn float-right" id="show_pcIndex" href="index.html">
+            <span>PC버전으로 보기</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</div>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/contactus.js"></script>
+  <script>
+    // $(document).ready(function(){
+    //   $('#footer').load('footer_m.html');
+    // })
+    $('#show_pcIndex').click(function(){
+      sessionStorage.setItem('show_pcIndex', true);
+    });
+  </script>
+</body>
+</html>
